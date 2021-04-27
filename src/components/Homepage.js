@@ -26,7 +26,7 @@ export default function Homepage(props) {
 
 	return (
 		<div className='title'>
-			<p id="title">Owen Moogk</p>
+			<p id="title" onClick={() => console.log("hi there friend!")}>Owen Moogk</p>
             <p id="subtitle" onClick={()=>loadSplash()}></p>
 		</div>
 	);
