@@ -1,10 +1,10 @@
-import '../css/index/main.css'
+import 'css/index/main.css'
 import React from 'react'
 
 export default function Homepage(props) {
 
 	function loadSplash(){
-		fetch('splashes.txt')
+		fetch(process.env.PUBLIC_URL+'/splashes.txt')
 		.then(response => response.text())
 		.then(data => {
 			let items = data.split(/\r?\n|\r/);
@@ -26,8 +26,8 @@ export default function Homepage(props) {
 
 	return (
 		<div className='title'>
-			<p id="title" onClick={()=>console.log("hii")}>Owen Moogk</p>
-            <p id="subtitle" onClick={loadSplash}></p>
+			<p id="title">Owen Moogk</p>
+            <p id="subtitle" onClick={()=>loadSplash()}></p>
 		</div>
 	);
 }

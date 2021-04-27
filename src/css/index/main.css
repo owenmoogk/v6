@@ -32,6 +32,8 @@ body{
 	font-size: 20px;
 	width: fit-content;
 	margin: auto;
+	user-select: none; /* Standard */
+
 }
 #hidden{
 	color: rgb(70,70,70);
