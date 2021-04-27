@@ -1,25 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {
+	BrowserRouter as Router,
+	Switch,
+	Route,
+} from 'react-router-dom';
+import Nav from "./components/Nav.js"
+import Homepage from './components/Homepage.js'
+import Workpage from './components/Workpage.js'
+import ContactPage from './components/contact/Contact.js';
+import Projects from  './components/projects/Projects.js'
+import ProjectPage from './components/projects/ProjectPage.js';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function App(props) {
+
+	return (
+		<Router>
+			<Nav></Nav>
+			<Switch>
+				<Route path='/projects'>
+					<Switch>
+						<Route path='/projects/covid-scraper'>
+							<ProjectPage />
+						</Route>
+						<Route path='/projects'>
+							<Projects/>
+						</Route>
+					</Switch>
+				</Route>
+				<Route path='/work'>
+					<Workpage/>
+				</Route>
+				<Route path='/contact'>
+					<ContactPage/>
+				</Route>
+				<Route exact path='/'>
+					<Homepage></Homepage>
+				</Route>
+			</Switch>
+		</Router>
+		
+	);
 }
 
 export default App;
