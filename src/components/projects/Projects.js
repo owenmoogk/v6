@@ -20,7 +20,7 @@ export default function ProjectPage(props) {
 					</div>
 					<div className="sort">
 						<label>Sort by: &nbsp; </label>
-						<select id="mySort">
+						<select id="mySort" onChange={()=>sortProjects()}>
 							<option value="">--</option>
 							<option value="alpha-desc">A-Z</option>
 							<option value="alpha-asc">Z-A</option>
