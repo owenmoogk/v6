@@ -1,0 +1,3 @@
+gotta fix the links in project xml files for images
+and import the images
+
