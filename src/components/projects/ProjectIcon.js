@@ -11,7 +11,7 @@ export default function ProjectIcon(props) {
 
 	let color = colors[props.type.toLowerCase()]
 	let link = '/projects/'+props.name
-	let img = '/img/projects/'+props.name+"/main.png"
+	let img = process.env.PUBLIC_URL + '/img/projects/'+props.name+"/main.png"
 	return (
 		<div className="content">
 			<a href={link}>
