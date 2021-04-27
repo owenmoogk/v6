@@ -2,6 +2,7 @@ import React from 'react';
 import 'css/projects/projects.css'
 import 'css/projects/sort.css'
 import ProjectIcon from './ProjectIcon'
+import {filterProjects, sortProjects} from './projectSorting'
 
 export default function ProjectPage(props) {
 	return (
@@ -11,11 +12,11 @@ export default function ProjectPage(props) {
                 <br></br>
                 <div className="sorting">
 					<div className="buttons">
-						<span className="sort_all btn active"><p>All</p></span>
-						<span className="sort_cad btn"><p>CAD</p></span>
-						<span className="sort_coding btn"><p>Coding</p></span>
-						<span className="sort_mechanical btn"><p>Mechanical</p></span>
-						<span className="sort_web-dev btn"><p>Web-Dev</p></span>
+						<span className="sort_all btn active" onClick={() => filterProjects('all')}><p>All</p></span>
+						<span className="sort_cad btn" onClick={() => filterProjects('cad')}><p>CAD</p></span>
+						<span className="sort_coding btn" onClick={() => filterProjects('coding')}><p>Coding</p></span>
+						<span className="sort_mechanical btn" onClick={() => filterProjects('mechanical')}><p>Mechanical</p></span>
+						<span className="sort_web-dev btn" onClick={() => filterProjects('web-dev')}><p>Web-Dev</p></span>
 					</div>
 					<div className="sort">
 						<label>Sort by: &nbsp; </label>
