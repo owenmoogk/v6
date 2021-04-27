@@ -8,8 +8,7 @@ import Nav from "components/Nav.js"
 import Homepage from 'components/Homepage.js'
 import Workpage from 'components/Workpage.js'
 import ContactPage from 'components/contact/Contact.js';
-import Projects from  'components/projects/Projects.js'
-import ProjectPage from 'components/projects/ProjectPage.js';
+import ProjectRouter from 'components/ProjectRouter.js';
 
 function App(props) {
 
@@ -18,14 +17,7 @@ function App(props) {
 			<Nav></Nav>
 			<Switch>
 				<Route path='/projects'>
-					<Switch>
-						<Route path='/projects/covid-scraper'>
-							<ProjectPage />
-						</Route>
-						<Route path='/projects'>
-							<Projects/>
-						</Route>
-					</Switch>
+					<ProjectRouter/>
 				</Route>
 				<Route path='/work'>
 					<Workpage/>
