@@ -32,7 +32,7 @@ body{
 	font-size: 20px;
 	width: fit-content;
 	margin: auto;
-	user-select: none; /* Standard */
+	user-select: none;
 
 }
 #hidden{
