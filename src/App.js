@@ -4,12 +4,12 @@ import {
 	Switch,
 	Route,
 } from 'react-router-dom';
-import Nav from "./components/Nav.js"
-import Homepage from './components/Homepage.js'
-import Workpage from './components/Workpage.js'
-import ContactPage from './components/contact/Contact.js';
-import Projects from  './components/projects/Projects.js'
-import ProjectPage from './components/projects/ProjectPage.js';
+import Nav from "components/Nav.js"
+import Homepage from 'components/Homepage.js'
+import Workpage from 'components/Workpage.js'
+import ContactPage from 'components/contact/Contact.js';
+import Projects from  'components/projects/Projects.js'
+import ProjectPage from 'components/projects/ProjectPage.js';
 
 function App(props) {
 

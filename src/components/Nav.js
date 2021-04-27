@@ -1,5 +1,5 @@
-import '../css/navbar.css'
-import pdf from '../resume.pdf'
+import 'css/navbar.css'
+import pdf from 'resume.pdf'
 import React from 'react';
 
 export default function Nav(props) {
