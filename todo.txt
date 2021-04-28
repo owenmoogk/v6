@@ -1,3 +1,8 @@
-gotta fix the links in project xml files for images
-and import the images
+fix the compiler starting page
 
+add pages for:
+	model rocket
+	geom calculator
+	dino game ai
+	covid website
+	covid scraper
