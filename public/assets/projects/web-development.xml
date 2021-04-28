@@ -25,18 +25,18 @@
     <block>
         <title>Downloads</title>
         <text>
-            <h3>Current Website</h3>
+            <h3 class="left">Current Website</h3>
             <ul>
                 <li><a href="https://github.com/owenmoogk/website-v4" class="blinks" target="_blank">GitHub Page</a> (Source Code)</li>
                 <li><a href="https://github.com/owenmoogk/redirect" class="blinks" target="_blank">Redirect Code</a></li>
             </ul>
-            <h3>Old Versions</h3>
+            <h3 class="left">Old Versions</h3>
             <ul>
                 <li><a href="http://owenmoogk-v1.tk" class="blinks" target="_blank">Version 1</a></li>
                 <li><a href="http://owenmoogk-v2.tk" class="blinks" target="_blank">Version 2</a></li>
                 <li><a href="http://owenmoogk-v3.tk" class="blinks" target="_blank">Version 3</a></li>
             </ul>
-            <h3>Old Versions (Source Code)</h3>
+            <h3 class="left">Old Versions (Source Code)</h3>
             <ul>
                 <li><a href="https://github.com/owenmoogk/website-v1/" class="blinks" target="_blank">Version 1</a></li>
                 <li><a href="https://github.com/owenmoogk/website-v2/" class="blinks" target="_blank">Version 2</a></li>
