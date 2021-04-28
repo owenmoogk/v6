@@ -20,26 +20,28 @@ export default function ProjectIcon(props) {
 	}
 
 	let img = process.env.PUBLIC_URL + '/img/projects/'+props.name+"/main.png"
-
+	function innerHtml(){
+		return(
+			<div>
+				<div className="content-overlay" style={{backgroundColor: color}}></div>
+				<img className="content-image" src={img} alt=''/>
+				<div className="content-details" style={{backgroundColor: color}}>
+					<h3 className="content-title">{props.title}</h3>
+					<p className="type">{props.type.toUpperCase()}</p>
+				</div>
+			</div>
+		)
+		
+	}
 	return (
 		<div className="content">
 			{linkChanged ? 
 			<a href={link} target='_blank'>
-				<div className="content-overlay" style={{backgroundColor: color}}></div>
-				<img className="content-image" src={img} alt=''/>
-				<div className="content-details" style={{backgroundColor: color}}>
-					<h3 className="content-title">{props.title}</h3>
-					<p className="type">{props.type.toUpperCase()}</p>
-				</div>
+				{innerHtml()}
 			</a>
 			:
 			<Link to={link}>
-				<div className="content-overlay" style={{backgroundColor: color}}></div>
-				<img className="content-image" src={img} alt=''/>
-				<div className="content-details" style={{backgroundColor: color}}>
-					<h3 className="content-title">{props.title}</h3>
-					<p className="type">{props.type.toUpperCase()}</p>
-				</div>
+				{innerHtml()}
 			</Link>
 			}
 		</div>
