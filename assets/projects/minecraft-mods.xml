@@ -35,7 +35,7 @@
         <text>
             The following is an outline of all changes (Ignoring the redstone dust changes mentioned above):
             ~~~~
-            <h3>Blocks</h3>
+            <h3 class="left">Blocks</h3>
             <ul>
                 <li>Observer Arrow and pulse indicator</li>
                 <li>Sticky piston indicator on back</li>
@@ -59,7 +59,7 @@
                 <li>Jukeboxes have a different top texture when containing a disc</li>
                 <li>End rods do not have a base</li>
             </ul>
-            <h3>GUI</h3>
+            <h3 class="left">GUI</h3>
             <ul>
                 <li>Rainbow XP bar</li>
                 <li>Colored connection symbol</li>
@@ -67,7 +67,7 @@
                 <li>Custom splashes ;)</li>
                 <li>Custom paintings (Including brewing stand chart)</li>
             </ul>
-            <h3>Sounds</h3>
+            <h3 class="left">Sounds</h3>
             <ul>
                 <li>Quieter minecarts, cows, pistons, droppers/dispensers, nether portals</li>
                 <li>Classic "OOF" damage sounds</li>
