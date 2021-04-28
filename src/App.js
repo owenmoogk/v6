@@ -1,8 +1,8 @@
 import React from 'react';
 import {
-	BrowserRouter as Router,
+	HashRouter as Router,
 	Switch,
-	Route,
+	Route
 } from 'react-router-dom';
 import Nav from "components/Nav.js"
 import Homepage from 'components/Homepage.js'

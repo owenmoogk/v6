@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 
 export default function ProjectIcon(props) {
 
@@ -12,15 +13,18 @@ export default function ProjectIcon(props) {
 	let color = colors[props.type.toLowerCase()]
 	let link = '/projects/'+props.name
 	// using the link prop overrides the default link
-	let target = ''
+	let linkChanged = false
 	if (props.link){
+		linkChanged = true
 		link = props.link
-		target = "_blank"
 	}
+
 	let img = process.env.PUBLIC_URL + '/img/projects/'+props.name+"/main.png"
+
 	return (
 		<div className="content">
-			<a href={link} target={target}>
+			{linkChanged ? 
+			<a href={link} target='_blank'>
 				<div className="content-overlay" style={{backgroundColor: color}}></div>
 				<img className="content-image" src={img} alt=''/>
 				<div className="content-details" style={{backgroundColor: color}}>
@@ -28,6 +32,16 @@ export default function ProjectIcon(props) {
 					<p className="type">{props.type.toUpperCase()}</p>
 				</div>
 			</a>
+			:
+			<Link to={link}>
+				<div className="content-overlay" style={{backgroundColor: color}}></div>
+				<img className="content-image" src={img} alt=''/>
+				<div className="content-details" style={{backgroundColor: color}}>
+					<h3 className="content-title">{props.title}</h3>
+					<p className="type">{props.type.toUpperCase()}</p>
+				</div>
+			</Link>
+			}
 		</div>
 	);
 }
