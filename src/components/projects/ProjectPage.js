@@ -28,7 +28,7 @@ export default function ProjectIcon(props) {
 		// load header of page
 		var pageTitle = xmlDoc.getElementsByTagName('page-title')[0].innerHTML
 		var date = xmlDoc.getElementsByTagName('date')[0].innerHTML
-		txt += '<div className="page-title"><p style="line-height: 70px;">'+pageTitle+'</p></div><div className="date"><p className="pdate">'+date+'</p></div>';
+		txt += '<div class="project-page-title"><p style="line-height: 70px;">'+pageTitle+'</p></div><div class="date"><p class="pdate">'+date+'</p></div>';
 
 
 		// load main part of the page
@@ -39,7 +39,7 @@ export default function ProjectIcon(props) {
 			var currBlockLength = blocks[currBlockNum].children.length // the number of elements in the current block
 			var currBlock = blocks[currBlockNum].children // the elements inside the current block
 
-			txt += '<div className="block">'
+			txt += '<div class="block">'
 
 			// looping thru the elements in the block
 			for (var blockElementNum = 0; blockElementNum < currBlockLength; blockElementNum++){
@@ -48,7 +48,7 @@ export default function ProjectIcon(props) {
 
 				// appending text to var 'txt' depending on tag name
 				if (elementType === 'title'){
-					txt += '<div className="text"><h1>'+elementData+'</h1>'
+					txt += '<div class="text"><h1 class="left">'+elementData+'</h1>'
 				}
 				else if (elementType === 'text'){
 					
@@ -61,13 +61,13 @@ export default function ProjectIcon(props) {
 							exitLoop = true
 						}
 					}
-					txt += '<p>'+elementData+'</p></div>'
+					txt += '<p class="left">'+elementData+'</p></div>'
 				}
 				else if (elementType === 'image'){
-					txt += '<div className="img"><img src="'+elementData+'" className="img"></div>'
+					txt += '<div class="img"><img src="'+elementData+'" class="img"></div>'
 				}
 				else if (elementType === 'render'){
-					txt += '<div className="render"><img src="'+elementData+'" className="img"></div>'
+					txt += '<div class="render"><img src="'+elementData+'" class="img"></div>'
 				}
 				else{
 					console.log('unknown tag name') // shouldnt ever happen
