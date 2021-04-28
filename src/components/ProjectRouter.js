@@ -15,7 +15,7 @@ function App(props) {
 				<Route exact path='/projects'>
 					<Projects/>
 				</Route>
-				<Route path='/projects/:id' children={<ProjectPage/>} />
+				<Route path='/projects/:name' children={<ProjectPage/>} />
 			</Switch>
 		</Router>
 		

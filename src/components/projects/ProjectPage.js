@@ -81,12 +81,12 @@ export default function ProjectIcon(props) {
 	}
 
 	// passed in from the router
-	var {id} = useParams()
-	var xmlFileLink = process.env.PUBLIC_URL + '/assets/projects/'+id+".xml"
+	var {name} = useParams()
+	var xmlFileLink = process.env.PUBLIC_URL + '/assets/projects/'+name+".xml"
 	
 	return (
 		<div className="body">
-			{loadProjectPage(xmlFileLink, id)}
+			{loadProjectPage(xmlFileLink, name)}
 		</div>
 	);
 }
