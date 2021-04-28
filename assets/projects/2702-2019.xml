@@ -12,7 +12,7 @@
             Overall, I am super proud of this robot, as we qualified for the Detroit World Championships!
             Check it out in action in our <a href="https://www.youtube.com/watch?v=Qg6R_3o6a9M" class="blinks" target="_blank">reveal video</a> (which is also linked at the bottom).
         </text>
-        <image>img/robot.png</image>
+        <image>robot.png</image>
     </block>
     <block>
         <title>Competition</title>
@@ -20,7 +20,7 @@
             During the 2019 season, our robot competed in 6 competitions, winning 3 awards. Our robot was 46-35-0 (win-loss-tie), and qualified to the Detroit World Championships,
             in which we were semi-finalists.
         </text>
-        <image>img/competition.png</image>
+        <image>competition.png</image>
     </block>
     <block>
         <title>Intake</title>
@@ -31,7 +31,7 @@
             and propelled the robot forward. The intake is an ABS roller run by a 775 motor attatched to a Versa Planetary Gearbox,
             and the whole mechanism is deployed using two Mini-CIMs.
         </text>
-        <image>img/intake.png</image>
+        <image>intake.png</image>
     </block>
     <block>
         <title>Shooter</title>
@@ -41,7 +41,7 @@
             This is how we can tell if we have a ball or not. This shooter is mounted to the elevator giving us ablilty to 
             deploy a ball on all three levels of the rocketship.
         </text>
-        <image>img/shooter.png</image>
+        <image>shooter.png</image>
     </block>
     <block>
         <title>Hatch Gripper</title>
@@ -51,7 +51,7 @@
             by pneumatics, and has a limit switch behind a peice of Lexan to detect when a hatch is ready to be picked up.
             It is also mounted to the elevator, meaning it can reach all three levels of the rocketship.
         </text>
-        <image>img/hatch.png</image>
+        <image>hatch.png</image>
     </block>
     <block>
         <title>Drivetrain</title>
@@ -59,7 +59,7 @@
             Lastly, the drivetrain of the robot is manufactured out of steel, and was welded together. It has six 6"
             SmoothGrip wheels in a tank drive formation, and is powered by four CIM motors, two on each side.
         </text>
-        <image>img/drive.png</image>
+        <image>drive.png</image>
     </block>
     <block>
         <title>Downloads</title>

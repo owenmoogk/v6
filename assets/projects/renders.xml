@@ -16,26 +16,26 @@
         <title>Donut</title>
     </block>
     <block>
-        <render>img/donut/donut1.png</render>
-        <render>img/donut/donut7.png</render>
+        <render>donut/donut1.png</render>
+        <render>donut/donut7.png</render>
     </block>
     <block>
         <title>Sticky Notes</title>
     </block>
     <block>
-        <render>img/sticky_notes/stickynotes.png</render>
-        <render>img/sticky_notes/stickynotes2.png</render>
+        <render>sticky_notes/stickynotes.png</render>
+        <render>sticky_notes/stickynotes2.png</render>
     </block>
     <block>
         <title>Futuristic/Minimal Phone Renders</title>
     </block>
     <block>
-        <render>img/phone/blue w background.svg</render>
-        <render>img/phone/pink.png</render>
+        <render>phone/blue w background.svg</render>
+        <render>phone/pink.png</render>
     </block>
     <block>
-        <render>img/phone/pink-back.png</render>
-        <render>img/phone/white on grey.svg</render>
+        <render>phone/pink-back.png</render>
+        <render>phone/white on grey.svg</render>
     </block>
     <block>
         <title>Downloads</title>

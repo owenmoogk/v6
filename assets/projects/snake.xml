@@ -13,7 +13,7 @@
         <title>Screenshots</title>
     </block>
     <block>
-        <render>/img/projects/flappy-bird-ai.png</render>
+        <render>/projects/flappy-bird-ai.png</render>
     </block> -->
     <block>
         <title>Downloads</title>
