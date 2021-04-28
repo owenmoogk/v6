@@ -13,7 +13,7 @@
             Check it out in action in our <a href="https://www.youtube.com/watch?v=tN_Rt3pt054" class="blinks" target="_blank">reveal video</a>. Unfortunatley, due to COVID-19, this robot
             has not been able to compete yet.
         </text>
-        <image>img/robot.png</image>
+        <image>robot.png</image>
     </block>
     <block>
         <title>Competition</title>
@@ -27,7 +27,7 @@
             with two wheels to handoff into the feeder. All three are driven by a 775 Pro attatched to a Versa Planetary gearbox.
             The intake is deployed by two 6" pneumatic pistons.
         </text>
-        <image>img/intake.png</image>
+        <image>intake.png</image>
     </block>
     <block>
         <title>Feeder</title>
@@ -35,7 +35,7 @@
             The feeder was designed with the sole intention of getting the balls from the intake to the shooter. It is made up of
             3D printer rollers and spacers running polycord between the shafts. It is run off of four RS550 motors.
         </text>
-        <image>img/feed.png</image>
+        <image>feed.png</image>
     </block>
     <block>
         <title>Shooter</title>
@@ -46,7 +46,7 @@
             AM-2235 Snowblower motor. The entire shooter is mounted on a turret that can pivot 270°, powered by a
             775 Pro motor.
         </text>
-        <image>img/shooter.png</image>
+        <image>shooter.png</image>
     </block>
     <block>
         <title>Climber/Control Panel</title>
@@ -55,7 +55,7 @@
             and is powered by two 775 Pro motors. It also doubles as our control panel mechanism, as it has two compliant wheels mounted on it.
             The mechanism is deployed using a pneumatic cylinder.
         </text>
-        <image>img/climb.png</image>
+        <image>climb.png</image>
     </block>
     <block>
         <title>Drivetrain</title>
@@ -63,7 +63,7 @@
             Lastly, the drivetrain of the robot is manufactured out of aluminum, and was welded together. It has six 6"
             SmoothGrip wheels in a tank drive formation, and is powered by four NEO motors, two on each side.
         </text>
-        <image>img/drive.png</image>
+        <image>drive.png</image>
     </block>
     <block>
         <title>Downloads</title>

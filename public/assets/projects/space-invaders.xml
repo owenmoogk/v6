@@ -24,8 +24,8 @@
         <title>Screenshots</title>
     </block>
     <block>
-        <render>img/demo1.png</render>
-        <render>img/demo2.png</render>
+        <render>demo1.png</render>
+        <render>demo2.png</render>
     </block>
     <block>
         <title>Downloads</title>

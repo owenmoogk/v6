@@ -17,7 +17,7 @@
         <title>Renders</title>
     </block>
     <block>
-        <render>img/render1.png</render>
-        <render>img/render3.png</render>
+        <render>render1.png</render>
+        <render>render3.png</render>
     </block>
 </page>

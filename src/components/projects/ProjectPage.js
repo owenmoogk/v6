@@ -5,11 +5,11 @@ import 'css/projects/project-pages.css'
 export default function ProjectIcon(props) {
 
 	// the function called when loading page
-	function loadProjectPage(xmlPage) {
+	function loadProjectPage(xmlPage, name) {
 		var xmlhttp = new XMLHttpRequest();
 		xmlhttp.onreadystatechange = function() {
 			if (this.readyState === 4 && this.status === 200) {
-				projectPage(this);
+				projectPage(this, name);
 			}
 		};
 		xmlhttp.open("GET", xmlPage, true);
@@ -17,7 +17,7 @@ export default function ProjectIcon(props) {
 	}
 
 	// actual loading process
-	function projectPage(xml) {
+	function projectPage(xml, name) {
 
 		// xml doxument
 		var xmlDoc = xml.responseXML;
@@ -64,10 +64,10 @@ export default function ProjectIcon(props) {
 					txt += '<p class="left">'+elementData+'</p></div>'
 				}
 				else if (elementType === 'image'){
-					txt += '<div class="img"><img src="'+elementData+'" class="img"></div>'
+					txt += '<div class="img"><img src="'+process.env.PUBLIC_URL+"/img/projects/"+name+"/"+elementData+'" class="img"></div>'
 				}
 				else if (elementType === 'render'){
-					txt += '<div class="render"><img src="'+elementData+'" class="img"></div>'
+					txt += '<div class="render"><img src="'+process.env.PUBLIC_URL+"/img/projects/"+name+"/"+elementData+'" class="img"></div>'
 				}
 				else{
 					console.log('unknown tag name') // shouldnt ever happen
@@ -86,7 +86,7 @@ export default function ProjectIcon(props) {
 	
 	return (
 		<div className="body">
-			{loadProjectPage(xmlFileLink)}
+			{loadProjectPage(xmlFileLink, id)}
 		</div>
 	);
 }
