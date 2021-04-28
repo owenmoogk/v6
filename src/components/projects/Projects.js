@@ -30,18 +30,19 @@ export default function ProjectPage(props) {
 				<br/><br/><br/><br/>
 				<div id="projectsGoHere">
 					<ProjectIcon title='COVID Scraper' name='covid-scraper' type='coding'/>
-					<ProjectIcon title='Sorting Visualizer' name='sorting-visualizer' type='coding'/>
+					<ProjectIcon title='Sorting Visualizer' name='sorting-visualizer' type='coding' link='https://owenmoogk.github.io/sorting-visualizer/'/>
 					<ProjectIcon title='COVID Website' name='covid-website' type='web-dev'/>
 					<ProjectIcon title='Dino Game AI' name='dino-game-ai' type='coding'/>
 					<ProjectIcon title='Geometry Calculator' name='geometry-calculator' type='coding'/>
-					<ProjectIcon title='Simplelib' name='simplelib' type='coding'/>
+					<ProjectIcon title='Simplelib' name='simplelib' type='coding' link='http://simplelib.tk/'/>
 					<ProjectIcon title='Flappy Bird AI' name='flappy-bird-ai' type='coding'/>
 					<ProjectIcon title='Email Bot' name='email-bot' type='coding'/>
 					<ProjectIcon title='Snake' name='snake' type='coding'/>
 					<ProjectIcon title='Model Rocket' name='model-rocket' type='mechanical'/>
 					<ProjectIcon title='Hydraulic Arm' name='hydraulic-arm' type='mechanical'/>
 					<ProjectIcon title='Space Invaders' name='space-invaders' type='coding'/>
-					<ProjectIcon title='The Compiler' name='the-compiler' type='web-dev'/>
+					<ProjectIcon title='The Compiler' name='the-compiler' type='web-dev' link='http://thecompiler.cf/'/>
+					{/* should get this up and working soon */}
 					<ProjectIcon title='Website Development' name='web-development' type='web-dev'/>
 					<ProjectIcon title='Renders/Graphic Design' name='renders' type='CAD'/>
 					<ProjectIcon title='Minecraft Modifications' name='minecraft-mods' type='coding'/>
