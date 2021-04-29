@@ -1,5 +1,5 @@
 import 'css/index/main.css'
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 
 export default function Homepage(props) {
 
@@ -10,8 +10,7 @@ export default function Homepage(props) {
 			let items = data.split(/\r?\n|\r/);
 			let index = getRandomInt(0, items.length-1)
 			let item = items[index]
-			let subtitle = document.getElementById("subtitle")
-			subtitle.innerText = item
+			setSplash(item)
   		});
 	}
 	
@@ -21,13 +20,18 @@ export default function Homepage(props) {
 		max = Math.floor(max)
 		return (Math.floor(Math.random() * (max - min + 1)) + min)
 	}
-
-	loadSplash()
+	
+	const [splash, setSplash] = useState('');
+	// lol this feels hacky but the [] makes it only load once
+	useEffect(() => {
+		loadSplash();
+	}, []);
+	
 
 	return (
 		<div className='title'>
 			<p id="title" onClick={() => console.log("hi there friend!")}>Owen Moogk</p>
-            <p id="subtitle" onClick={()=>loadSplash()}></p>
+			<p id="subtitle" onClick={() => loadSplash()}>{splash}</p>
 		</div>
 	);
 }
