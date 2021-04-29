@@ -36,7 +36,7 @@ export default function ProjectIcon(props) {
 	return (
 		<div className="content">
 			{linkChanged ? 
-			<a href={link} target='_blank'>
+			<a href={link} target='_blank' rel='noreferrer'>
 				{innerHtml()}
 			</a>
 			:
