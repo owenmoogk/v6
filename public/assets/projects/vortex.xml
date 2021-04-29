@@ -22,7 +22,7 @@
         <text>
             The feeder is on the underside of the bot, and it is also driven by rollers and polycord. It's sole purpose is to get the game peices from both intakes and put them into one stream, and then to hand it off to the shooter mounted on the elevator.
         </text>
-        <image>feed.png</image>
+        <!-- <image>feed.png</image> -->
     </block>
     <block>
         <title>Shooter</title>
@@ -43,6 +43,7 @@
         <text>
             The top of the elevator has 2 bunny ears attatched to it, so it can perform a climb at the end of the match. The elevator goes up and then hooks on, which can pull the robot up to the bar.
         </text>
+		<image>climb.png</image>
     </block>
     <block>
         <title>Drivetrain</title>
