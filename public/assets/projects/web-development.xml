@@ -8,15 +8,14 @@
         <text> 
             I recently made this website as a place to tell a little bit about me, show off some of my projects,
             and to have a "one stop shop" for all my files that people might find useful. The links and downloads to the
-            source files are found below.
-            if you have any suggestions please feel free to <a href="/html/contact.html" class="blinks">contact me</a>.
+            source files are found below. This was a fun project, as I just learned how to use ReactJS and deploy it on github pages.
+            if you have any suggestions please feel free to <a href="/#/contact" class="blinks">contact me</a>.
         </text>
     </block>
     <block>
         <title>Old Versions</title>
         <text> 
-            Along with this, I have made older versions of this website public as well. You can see it 
-            <a href="https://owenmoogk.github.io/website-v1/" class="blinks" target="_blank">here</a>.
+            Along with this, I have made older versions of this website public as well. You can see them below.
             As with the other website, the GitHub page is linked below.
             Please do not use it as a source for information, as it is not up to date
             and is missing key components. This website has all the information relevant, so please use that as only an archive.
@@ -27,7 +26,7 @@
         <text>
             <h3 class="left">Current Website</h3>
             <ul>
-                <li><a href="https://github.com/owenmoogk/website-v4" class="blinks" target="_blank">GitHub Page</a> (Source Code)</li>
+                <li><a href="https://github.com/owenmoogk/website-v6" class="blinks" target="_blank">GitHub Page</a> (Source Code)</li>
                 <li><a href="https://github.com/owenmoogk/redirect" class="blinks" target="_blank">Redirect Code</a></li>
             </ul>
             <h3 class="left">Old Versions</h3>
@@ -35,12 +34,16 @@
                 <li><a href="http://owenmoogk-v1.tk" class="blinks" target="_blank">Version 1</a></li>
                 <li><a href="http://owenmoogk-v2.tk" class="blinks" target="_blank">Version 2</a></li>
                 <li><a href="http://owenmoogk-v3.tk" class="blinks" target="_blank">Version 3</a></li>
+				<li><a href="http://owenmoogk-v4.tk" class="blinks" target="_blank">Version 4</a></li>
+                <li><a href="http://owenmoogk-v5.tk" class="blinks" target="_blank">Version 5</a></li>
             </ul>
             <h3 class="left">Old Versions (Source Code)</h3>
             <ul>
                 <li><a href="https://github.com/owenmoogk/website-v1/" class="blinks" target="_blank">Version 1</a></li>
                 <li><a href="https://github.com/owenmoogk/website-v2/" class="blinks" target="_blank">Version 2</a></li>
                 <li><a href="https://github.com/owenmoogk/website-v3/" class="blinks" target="_blank">Version 3</a></li>
+				<li><a href="https://github.com/owenmoogk/website-v4/" class="blinks" target="_blank">Version 4</a></li>
+                <li><a href="https://github.com/owenmoogk/website-v5/" class="blinks" target="_blank">Version 5</a></li>
             </ul>
         </text>
     </block>
