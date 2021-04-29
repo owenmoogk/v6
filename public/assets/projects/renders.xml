@@ -16,8 +16,8 @@
         <title>Donut</title>
     </block>
     <block>
-        <render>donut/donut1.png</render>
         <render>donut/donut7.png</render>
+        <render>donut/donut1.png</render>
     </block>
     <block>
         <title>Sticky Notes</title>
@@ -41,10 +41,9 @@
         <title>Downloads</title>
         <text>
              <ul>
-                <li><a href="https://github.com/owenmoogk/renders/tree/master/cad/phone_cad" class="blinks" target="_blank">Phone CAD</a></li>
-                <li><a href="https://github.com/owenmoogk/renders/tree/master/images/Phones" class="blinks" target="_blank">Phone Renders</a></li>
-                <li><a href="https://github.com/owenmoogk/renders/tree/master/cad/sticky_note_cad" class="blinks" target="_blank">Sticky Note CAD</a></li>
-                <li><a href="https://github.com/owenmoogk/renders/tree/master/images/Sticky%20Notes" class="blinks" target="_blank">Sticky Note Renders</a></li>
+                <li><a href="https://github.com/owenmoogk/renders/tree/master/phone/cad" class="blinks" target="_blank">Phone</a></li>
+                <li><a href="https://github.com/owenmoogk/renders/tree/master/stickynotes" class="blinks" target="_blank">Sticky Notes</a></li>
+                <li><a href="https://github.com/owenmoogk/renders/tree/master/donut" class="blinks" target="_blank">Donut</a></li>
             </ul>
         </text>
     </block>
