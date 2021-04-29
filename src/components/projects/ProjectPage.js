@@ -26,7 +26,14 @@ export default function ProjectIcon(props) {
 		var txt = "";
 
 		// load header of page
-		var pageTitle = xmlDoc.getElementsByTagName('page-title')[0].innerHTML
+		try{
+			var pageTitle = xmlDoc.getElementsByTagName('page-title')[0].innerHTML
+		}
+		catch{
+			document.getElementsByClassName("body")[0].innerHTML = '<h2>Page not found</h2>';
+			return
+		}
+		
 		var date = xmlDoc.getElementsByTagName('date')[0].innerHTML
 		txt += '<div class="project-page-title"><p style="line-height: 70px;">'+pageTitle+'</p></div><div class="date"><p class="pdate">'+date+'</p></div>';
 
@@ -86,7 +93,12 @@ export default function ProjectIcon(props) {
 	
 	return (
 		<div className="body">
-			{loadProjectPage(xmlFileLink, name)}
+			{
+				loadProjectPage(xmlFileLink, name) ?
+				<div>hi</div>:
+				<div>else</div>
+
+			}
 		</div>
 	);
 }
