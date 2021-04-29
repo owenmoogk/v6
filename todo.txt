@@ -1,8 +1,6 @@
 fix the compiler starting page
 
 add pages for:
-	model rocket
 	geom calculator
-	dino game ai
 	covid website
 	covid scraper
