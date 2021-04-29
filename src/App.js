@@ -5,7 +5,7 @@ import {
 	Route
 } from 'react-router-dom';
 import Nav from "components/Nav.js"
-import Homepage from 'components/Homepage.js'
+import Homepage from 'components/homepage/Homepage.js'
 import Workpage from 'components/Workpage.js'
 import ContactPage from 'components/contact/Contact.js';
 import ProjectRouter from 'components/ProjectRouter.js';
