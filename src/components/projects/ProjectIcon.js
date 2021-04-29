@@ -3,15 +3,8 @@ import {Link} from 'react-router-dom'
 
 export default function ProjectIcon(props) {
 
-	var colors = {
-        cad: '#0abde3',
-        coding:"#a6c44e",
-        mechanical:"#ff9f43",
-        'web-dev':"#d65858"
-    }
-
-	let color = colors[props.type.toLowerCase()]
 	let link = '/projects/'+props.name
+	let type = props.type.toLowerCase()
 	// using the link prop overrides the default link
 	let linkChanged = false
 	if (props.link){
@@ -23,11 +16,11 @@ export default function ProjectIcon(props) {
 	function innerHtml(){
 		return(
 			<div>
-				<div className="content-overlay" style={{backgroundColor: color}}></div>
+				<div className={"content-overlay "+type}></div>
 				<img className="content-image" src={img} alt=''/>
-				<div className="content-details" style={{backgroundColor: color}}>
+				<div className={"content-details "+type}>
 					<h3 className="content-title">{props.title}</h3>
-					<p className="type">{props.type.toUpperCase()}</p>
+					<p className="type">{type.toUpperCase()}</p>
 				</div>
 			</div>
 		)

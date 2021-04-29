@@ -7,11 +7,11 @@
 }
 
 :root {
-    --color_all: #1e272e;
-    --color_cad: #0abde3;
-    --color_coding: #a6c44e;
-    --color_mechanical: #ff9f43;
-    --color_web-dev: #d65858;
+    --color_all: rgb(30, 39, 46);
+    --color_cad: #DBD56E;
+    --color_coding: #53B3CB;
+    --color_mechanical: #F08A4B;
+    --color_web-dev: #B24C63;
     --white: #ffffff;
 }
 
@@ -147,4 +147,19 @@
         clear: both;
         float: left;
     }
+}
+
+/* the project icons */
+
+.mechanical{
+	background-color: var(--color_mechanical);
+}
+.coding{
+	background-color: var(--color_coding);
+}
+.cad{
+	background-color: var(--color_cad);
+}
+.web-dev{
+	background-color: var(--color_web-dev);
 }
