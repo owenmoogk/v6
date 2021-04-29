@@ -1,5 +1,6 @@
 import 'css/index/main.css'
 import React, {useState, useEffect} from 'react'
+import Background from './Background.js'
 
 export default function Homepage(props) {
 
@@ -29,9 +30,12 @@ export default function Homepage(props) {
 	
 
 	return (
-		<div className='title'>
-			<p id="title" onClick={() => console.log("hi there friend!")}>Owen Moogk</p>
-			<p id="subtitle" onClick={() => loadSplash()}>{splash}</p>
+		<div>
+			<div className='title'>
+				<p id="title" onClick={() => console.log("hi there friend!")}>Owen Moogk</p>
+				<p id="subtitle" onClick={() => loadSplash()}>{splash}</p>
+			</div>
+			<Background />
 		</div>
 	);
 }

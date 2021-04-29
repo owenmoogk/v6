@@ -1,6 +1,14 @@
 *{
     font-family: 'IBM Plex Sans', serif;
 }
+
+canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: black;
+}
+
 :root{
 	--textcolor: white;
 }
@@ -27,6 +35,7 @@ body{
 	padding-top: calc(calc(100vh / 2) - 200px);
 	margin: 0;
 }
+
 #subtitle{
 	color: var(--textcolor);
 	font-size: 20px;
