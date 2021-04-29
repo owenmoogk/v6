@@ -9,12 +9,12 @@
             I have been learning a bit about python, so I implemented the classic snake game into pygame. I also am working on an AI version of this, but at the moment I am just using a Hamiltonian cycle.
         </text>
     </block>
-    <!-- <block>
+    <block>
         <title>Screenshots</title>
     </block>
     <block>
-        <render>/projects/flappy-bird-ai.png</render>
-    </block> -->
+        <render>main.png</render>
+    </block>
     <block>
         <title>Downloads</title>
         <text>
