@@ -2,7 +2,7 @@ import React from 'react';
 import pdf from 'resume.pdf'
 import {Link} from 'react-router-dom'
 
-export default function Nav(props) {
+export default function Nav() {
 	return (
 		<div id="navBox">
 			<a href="/" className="navlinks"><p>Home</p></a>

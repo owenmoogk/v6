@@ -4,7 +4,7 @@ import 'css/projects/sort.css'
 import ProjectIcon from './ProjectIcon'
 import {filterProjects, search} from './projectSorting'
 
-export default function ProjectPage(props) {
+export default function ProjectPage() {
 	return (
 		<div className="main">
             <div className="page">

@@ -1,7 +1,7 @@
 import 'css/work.css'
 import React from 'react';
 
-export default function Workpage(props) {
+export default function Workpage() {
 	return (
 		<div className="main">
             <div className="page">

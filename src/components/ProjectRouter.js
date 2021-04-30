@@ -7,7 +7,7 @@ import {
 import Projects from  'components/projects/Projects.js'
 import ProjectPage from 'components/projects/ProjectPage.js'
 
-function App(props) {
+function App() {
 
 	return (
 		<Router>

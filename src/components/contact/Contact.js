@@ -2,7 +2,7 @@ import React from 'react';
 import ContactLink from './ContactLink.js'
 import 'css/contact.css'
 
-export default function ContactPage(props) {
+export default function ContactPage() {
 	return (
 		<div className="main">
 			<p className="title">Contact</p>
