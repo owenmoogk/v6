@@ -2,7 +2,7 @@ import React from 'react';
 import 'css/projects/projects.css'
 import 'css/projects/sort.css'
 import ProjectIcon from './ProjectIcon'
-import {filterProjects, sortProjects} from './projectSorting'
+import {filterProjects, search} from './projectSorting'
 
 export default function ProjectPage(props) {
 	return (
@@ -19,12 +19,7 @@ export default function ProjectPage(props) {
 						<span className="sort_web-dev btn" onClick={() => filterProjects('web-dev')}><p>Web-Dev</p></span>
 					</div>
 					<div className="sort">
-						<label>Sort by: &nbsp; </label>
-						<select id="mySort" onChange={()=>sortProjects()}>
-							<option value="">--</option>
-							<option value="alpha-desc">A-Z</option>
-							<option value="alpha-asc">Z-A</option>
-						</select>
+						<input type="text" id="searchBar" onKeyUp={()=>search()} placeholder="Search by Date, Title, or Text" title="Type to search"/>
 					</div>
 				</div>
 				<br/><br/><br/><br/>
