@@ -9,7 +9,7 @@ import Homepage from 'components/homepage/Homepage.js'
 import Workpage from 'components/Workpage.js'
 import ContactPage from 'components/contact/Contact.js';
 import ProjectRouter from 'components/ProjectRouter.js';
-import 'css/navbar.css'
+import 'css/index.css'
 
 function App(props) {
 
