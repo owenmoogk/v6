@@ -5,6 +5,4 @@ add pages for:
 	covid website
 	covid scraper
 
-on project page remove the sortby and add search
-
 fix css
