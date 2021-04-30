@@ -1,4 +1,3 @@
-import 'css/navbar.css'
 import 'css/work.css'
 import React from 'react';
 

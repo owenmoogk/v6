@@ -1,6 +1,5 @@
-import 'css/navbar.css'
-import pdf from 'resume.pdf'
 import React from 'react';
+import pdf from 'resume.pdf'
 import {Link} from 'react-router-dom'
 
 export default function Nav(props) {
