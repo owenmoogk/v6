@@ -1,7 +1,6 @@
 import React from 'react';
 import ContactLink from './ContactLink.js'
 import 'css/contact/contact.css'
-import Background from 'components/background/Background'
 
 export default function ContactPage(props) {
 	return (
