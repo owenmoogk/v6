@@ -1,6 +1,6 @@
 import 'css/index/main.css'
 import React, {useState, useEffect} from 'react'
-import Background from './Background.js'
+import Background from 'components/background/Background.js'
 
 export default function Homepage(props) {
 
