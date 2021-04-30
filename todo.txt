@@ -7,3 +7,5 @@ add pages for:
 
 
 on project page remove the sortby and add search
+
+fix css
