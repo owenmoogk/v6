@@ -8,6 +8,6 @@ export default function Background() {
 	}, []);
 
 	return (
-		<canvas id='c' style={{zIndex: -1}}></canvas>
+		<canvas id='background-canvas' style={{zIndex: -1}}></canvas>
 	);
 }

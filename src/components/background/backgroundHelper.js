@@ -1,6 +1,6 @@
 export function loadBackground(){
 
-	var c = document.getElementById('c')
+	var c = document.getElementById('background-canvas')
 
 	var w = c.width = window.innerWidth,
 		h = c.height = window.innerHeight,
