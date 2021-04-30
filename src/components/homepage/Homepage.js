@@ -25,12 +25,20 @@ export default function Homepage(props) {
 	const [splash, setSplash] = useState('');
 	// lol this feels hacky but the [] makes it only load once
 	useEffect(() => {
+
+		// load a random splash
 		loadSplash();
 
 		// setting the background to have no scrolling
-
 		document.body.style.overflowY = 'hidden'
 		document.body.style.overflowX = 'hidden'
+
+		// return is fired on componentwillunmount
+		return() =>{
+			document.body.style.overflowY = 'scroll'
+			document.body.style.overflowX = 'scroll'
+		}
+
 	}, []);
 	
 
