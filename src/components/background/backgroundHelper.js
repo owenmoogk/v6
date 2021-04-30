@@ -9,10 +9,9 @@ export function loadBackground(){
 		minDist = 10,
 		maxDist = 30,
 		initialWidth = 10,
-		maxLines = 100,
 		initialLines = 4,
 		speed = 5,
-
+		maxLines,
 		lines = [],
 		frame = 0,
 		timeSinceLast = 0,
@@ -37,6 +36,15 @@ export function loadBackground(){
 			vy: 0,
 			width: initialWidth
 		};
+
+	// determining the max lines for mobile
+	if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+		// true for mobile device
+		maxLines = 20
+	}else{
+		// false for not mobile device
+		maxLines = 100
+	}
 
 	function init() {
 
