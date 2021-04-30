@@ -42,6 +42,5 @@ body {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	margin: auto;
 	align-items: center;
 }

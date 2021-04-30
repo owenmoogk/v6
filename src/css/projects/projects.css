@@ -1,13 +1,11 @@
-.title{
-    text-align: center;
-}
-.page {
-    width: calc(100vw - 400px);
-}
 @media only screen and (max-width: 1140px) {
-    .page{
-        width: 100vw;
+	.page{
+		width: 100vw;
     }
+}
+
+.page {
+	width: calc(100vw - 400px);
 }
 
 /* the entry has the image and text side */
