@@ -26,6 +26,11 @@ export default function Homepage(props) {
 	// lol this feels hacky but the [] makes it only load once
 	useEffect(() => {
 		loadSplash();
+
+		// setting the background to have no scrolling
+
+		document.body.style.overflowY = 'hidden'
+		document.body.style.overflowX = 'hidden'
 	}, []);
 	
 
