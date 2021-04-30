@@ -29,8 +29,21 @@ export default function ProjectPage(props) {
 				</div>
 				<br/><br/><br/><br/>
 				<div id="projectsGoHere">
-					<ProjectIcon title='COVID Scraper' name='covid-scraper' type='coding'/>
+					<ProjectIcon title='Music Bot' name='music-bot' type='coding'/>
+					<ProjectIcon title='NHL Fantasy App' name='nhl-fantasy' type='coding'/>
+					<ProjectIcon title='Pathfinding Visualizer' name='pathfinding-visualizer' type='coding'/>
 					<ProjectIcon title='Sorting Visualizer' name='sorting-visualizer' type='coding' link='https://owenmoogk.github.io/sorting-visualizer/'/>
+					<ProjectIcon title='Firefly Simulator' name='firefly-simulator' type='coding'/>
+					<ProjectIcon title='Outbreak Simulator' name='outbreak-simulator' type='coding'/>
+					<ProjectIcon title='Pendulum Physics Simulator' name='pendulum-simulator' type='coding'/>
+					<ProjectIcon title='Sudoku Bot' name='sudoku-bot' type='coding' link='https://owenmoogk.github.io/sudoku-visualizer'/>
+					<ProjectIcon title='Notes App' name='notes-app' type='coding'/>
+					<ProjectIcon title='LAN Messenger' name='lan-messenger' type='coding'/>
+					<ProjectIcon title='Grocery List App' name='grocery-list' type='coding'/>
+					<ProjectIcon title='Unix Time Converter' name='unix-time' type='coding' link='https://owenmoogk.github.io/unix-time'/>
+					<ProjectIcon title='Password Manager' name='password-manager' type='coding' link='https://owenmoogk.github.io/password-manager/'/>
+					<ProjectIcon title='Color Picker' name='color-picker' type='coding'/>
+					<ProjectIcon title='COVID Scraper' name='covid-scraper' type='coding'/>
 					<ProjectIcon title='COVID Website' name='covid-website' type='web-dev'/>
 					<ProjectIcon title='Dino Game AI' name='dino-game-ai' type='coding'/>
 					<ProjectIcon title='Geometry Calculator' name='geometry-calculator' type='coding'/>
@@ -42,7 +55,6 @@ export default function ProjectPage(props) {
 					<ProjectIcon title='Hydraulic Arm' name='hydraulic-arm' type='mechanical'/>
 					<ProjectIcon title='Space Invaders' name='space-invaders' type='coding'/>
 					<ProjectIcon title='The Compiler' name='the-compiler' type='web-dev' link='http://thecompiler.cf/'/>
-					{/* should get this up and working soon */}
 					<ProjectIcon title='Website Development' name='web-development' type='web-dev'/>
 					<ProjectIcon title='Renders/Graphic Design' name='renders' type='CAD'/>
 					<ProjectIcon title='Minecraft Modifications' name='minecraft-mods' type='coding'/>

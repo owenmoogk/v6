@@ -1,0 +1,26 @@
+<page>
+    <page-head> 
+        <page-title>Firefly Simulator</page-title>
+        <date>March 31, 2021</date>
+    </page-head>
+    <block>
+        <title>Overview</title>
+        <text> 
+			I recently stumbled upon some other work that showcased how fireflys use those around them to adjust their blinking, and from small interactions the whole group becomes syncronized. I thought it was really interesting, so I wanted to do it with pygame. It sort of works at the moment, but I would like to allow them to move about and then try with that added layer. Code link below! :)
+        </text>
+    </block>
+    <block>
+        <title>Screenshots</title>
+    </block>
+    <block>
+        <render>main.png</render>
+    </block>
+    <block>
+        <title>Downloads</title>
+        <text>
+            <ul>
+                <li><a href="https://github.com/owenmoogk/firefly-sync" class="blinks" target="_blank">Code</a></li>
+            </ul>
+        </text>
+    </block>
+</page>
