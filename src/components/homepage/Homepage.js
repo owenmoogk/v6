@@ -1,4 +1,4 @@
-import 'css/index/main.css'
+import 'css/main.css'
 import React, {useState, useEffect} from 'react'
 import Background from 'components/background/Background.js'
 
@@ -39,13 +39,15 @@ export default function Homepage(props) {
 			document.body.style.overflowX = 'scroll'
 		}
 
+		// gets rid of the warning that i dont understand
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 	
 
 	return (
 		<div>
 			<div className='title'>
-				<p id="title" onClick={() => console.log("hi there friend!")}>Owen Moogk</p>
+				<p id="title">Owen Moogk</p>
 				<p id="subtitle" onClick={() => loadSplash()}>{splash}</p>
 			</div>
 			<Background />

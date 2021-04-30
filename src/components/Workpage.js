@@ -1,4 +1,5 @@
 import 'css/navbar.css'
+import 'css/work.css'
 import React from 'react';
 
 export default function Workpage(props) {
@@ -7,7 +8,7 @@ export default function Workpage(props) {
             <div className="page">
                 <p className="title">Work</p>
                 <br></br>
-                <p id="subtitle">Coming soon to a website near you :)</p>
+                <p id="workSubtitle">Coming soon to a website near you :)</p>
             </div>
         </div>
 	);
