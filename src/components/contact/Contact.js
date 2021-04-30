@@ -1,12 +1,13 @@
 import React from 'react';
 import ContactLink from './ContactLink.js'
 import 'css/contact/contact.css'
+import Background from 'components/background/Background'
 
 export default function ContactPage(props) {
 	return (
 		<div className="main">
-            <p className="title">Contact</p>
-            <div className="contact">
+			<p className="title">Contact</p>
+			<div className="contact">
 				<div id="main">
 					<ContactLink link='mailto:owenmoogk@gmail.com' text='Personal Email' />
 					<ContactLink link='tel:+1-226-989-0602' text='Phone' />
@@ -16,7 +17,7 @@ export default function ContactPage(props) {
 					<ContactLink link='https://repl.it/@owenm21' text='Repl.it' />
 					<ContactLink link='https://www.linkedin.com/in/owen-moogk-1ab9371b8/' text='LinkedIn' />
 				</div>
-            </div>
-        </div>
+			</div>
+		</div>
 	);
 }
