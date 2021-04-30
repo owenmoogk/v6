@@ -26,11 +26,10 @@ function App(props) {
 					<ContactPage/>
 				</Route>
 				<Route exact path='/'>
-					<Homepage></Homepage>
+					<Homepage/>
 				</Route>
 			</Switch>
 		</Router>
-		
 	);
 }
 
