@@ -48,7 +48,7 @@ export default function Homepage() {
 		<div>
 			<div className='title'>
 				<p id="title">Owen Moogk</p>
-				<p id="subtitle" onClick={() => loadSplash()}>{splash}</p>
+				<p id="splash" onClick={() => loadSplash()}>{splash}</p>
 			</div>
 			<Background />
 		</div>

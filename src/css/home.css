@@ -5,19 +5,14 @@ canvas {
 	background-color: black;
 }
 
-/* .title {
-	width: 100%;
-	text-align: center;
-} */
-
 #title {
 	font-size: 100px;
-	color: var(--textcolor);
+	color: white;
 	padding-top: calc(calc(100vh / 2) - 200px);
 	margin: 0;
 }
 
-#subtitle {
+#splash {
 	color: var(--textcolor);
 	font-size: 20px;
 	width: fit-content;
