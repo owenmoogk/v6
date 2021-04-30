@@ -1,0 +1,26 @@
+<page>
+    <page-head> 
+        <page-title>Pathfinding Visualizer</page-title>
+        <date>February 20, 2021</date>
+    </page-head>
+    <block>
+        <title>Overview</title>
+        <text> 
+			I was looking at different types of algorithms in python and javascript, and wanted to make a visualizer to show how they work. I started in pygame, and made a pathfinding visualizer. It is pretty cool, and works well. It can use lots of different searching techniques. I had to do a lot of googling for A*, but I also implemented Dijkstra's and Greedy Best First Search. The code is linked below.
+        </text>
+    </block>
+    <block>
+        <title>Screenshots</title>
+    </block>
+    <block>
+        <render>main.png</render>
+    </block>
+    <block>
+        <title>Downloads</title>
+        <text>
+            <ul>
+                <li><a href="https://github.com/owenmoogk/pathfinding-visualizer" class="blinks" target="_blank">Code</a></li>
+            </ul>
+        </text>
+    </block>
+</page>

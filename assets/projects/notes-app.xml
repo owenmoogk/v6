@@ -1,0 +1,26 @@
+<page>
+    <page-head> 
+        <page-title>Notes App</page-title>
+        <date>February 10, 2021</date>
+    </page-head>
+    <block>
+        <title>Overview</title>
+        <text> 
+            This is a really simple note taking app created in Flask. I have since moved on to using Django as it is far more powerful, but this was my first introduction to backend software, and was lots of fun to make. If I remember correctly I made this while following along with a TechWithTim video, and then added some of my own features on. It is currently not active, but you are welcome to use it. Code linked below.
+        </text>
+    </block>
+    <!-- <block>
+        <title>Screenshots</title>
+    </block>
+    <block>
+        <render>main.png</render>
+    </block> -->
+    <block>
+        <title>Downloads</title>
+        <text>
+            <ul>
+                <li><a href="https://github.com/owenmoogk/notes-app/" class="blinks" target="_blank">Code</a></li>
+            </ul>
+        </text>
+    </block>
+</page>
