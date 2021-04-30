@@ -1,10 +1,9 @@
-fix the compiler starting page
+fix the compiler image
 
 add pages for:
 	geom calculator
 	covid website
 	covid scraper
-
 
 on project page remove the sortby and add search
 
