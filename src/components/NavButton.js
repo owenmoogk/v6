@@ -8,9 +8,9 @@ export default function NavButton() {
 	function toggleNav(){
 		var navBox = document.getElementById('navBox')
 		if (navBox.style.display === 'block'){
-			navBox.style.display = 'none'
+			navBox.style.display = ''
 			setText('Menu')
-			document.body.style.overflow = 'inherit'
+			document.body.style.overflow = ''
 		}
 		else{
 			navBox.style.display = 'block'
