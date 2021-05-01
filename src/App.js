@@ -5,6 +5,7 @@ import {
 	Route
 } from 'react-router-dom';
 import Nav from "components/Nav.js"
+import NavButton from 'components/NavButton.js'
 import Homepage from 'components/homepage/Homepage.js'
 import Workpage from 'components/Workpage.js'
 import ContactPage from 'components/contact/Contact.js';
@@ -15,7 +16,8 @@ function App(props) {
 
 	return (
 		<Router>
-			<Nav></Nav>
+			<NavButton/>
+			<Nav/>
 			<Switch>
 				<Route path='/projects'>
 					<ProjectRouter/>
