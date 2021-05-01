@@ -1,5 +1,9 @@
 export function loadBackground(){
 
+	function getMaxLines(){
+		return(Math.floor((window.innerWidth * window.innerHeight) / 10000))
+	}
+
 	var c = document.getElementById('background-canvas')
 
 	var w = c.width = window.innerWidth,
@@ -37,14 +41,7 @@ export function loadBackground(){
 			width: initialWidth
 		};
 
-	// determining the max lines for mobile
-	if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-		// true for mobile device
-		maxLines = 20
-	}else{
-		// false for not mobile device
-		maxLines = 100
-	}
+		maxLines = getMaxLines()
 
 	function init() {
 
@@ -175,7 +172,7 @@ export function loadBackground(){
 		h = c.height = window.innerHeight;
 		starter.x = w / 2;
 		starter.y = h / 2;
-
+		maxLines = getMaxLines()
 		init();
 	})
 
