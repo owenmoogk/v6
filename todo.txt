@@ -1,8 +1,4 @@
-fix the compiler image
-
 add pages for:
 	geom calculator
 	covid website
 	covid scraper
-
-background depends on the dimensions
