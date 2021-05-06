@@ -1,7 +1,7 @@
 export function loadBackground(){
 
 	function getMaxLines(){
-		return(Math.floor((window.innerWidth * window.innerHeight) / 10000))
+		return(Math.floor((window.innerWidth * window.innerHeight) / 12000))
 	}
 
 	var c = document.getElementById('background-canvas')
@@ -41,7 +41,7 @@ export function loadBackground(){
 			width: initialWidth
 		};
 
-		maxLines = getMaxLines()
+	maxLines = getMaxLines()
 
 	function init() {
 
@@ -174,6 +174,11 @@ export function loadBackground(){
 		starter.y = h / 2;
 		maxLines = getMaxLines()
 		init();
+	})
+
+	document.getElementById('secret').addEventListener('click', function () {
+		maxLines = 2000
+		document.getElementById('secret').innerHTML = 'More colors!'
 	})
 
 }

@@ -49,7 +49,9 @@ export default function Homepage() {
 			<div className='title'>
 				<p id="title">Owen Moogk</p>
 				<p id="splash" onClick={() => loadSplash()}>{splash}</p>
+				<p id="secret">You found the top secret button (don't click this text)</p>
 			</div>
+			<div id="secretButton" onClick={()=> document.getElementById('secret').style.display = 'inherit'}></div>
 			<Background />
 		</div>
 	);

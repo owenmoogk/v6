@@ -19,3 +19,16 @@ canvas#background-canvas {
 	margin: auto;
 	user-select: none;
 }
+
+#secret{
+	font-size: 20px;
+	display: none;
+}
+
+#secretButton{
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	bottom: 0;
+	left: 0;
+}

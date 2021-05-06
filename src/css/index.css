@@ -44,3 +44,7 @@ body {
 	flex-wrap: wrap;
 	align-items: center;
 }
+
+#root{
+	height: 100%;
+}
