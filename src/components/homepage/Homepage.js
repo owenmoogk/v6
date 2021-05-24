@@ -39,8 +39,6 @@ export default function Homepage() {
 			document.body.style.overflowX = 'scroll'
 		}
 
-		// gets rid of the warning that i dont understand
-		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 	
 

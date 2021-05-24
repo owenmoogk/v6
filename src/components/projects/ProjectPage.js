@@ -20,66 +20,99 @@ export default function ProjectIcon() {
 	function projectPage(xml, name) {
 
 		// xml doxument
-		var xmlDoc = xml.responseXML;
+		var xmlDoc = JSON.parse(xml.response)['page'];
 
 		// entire html of page
 		var txt = "";
 
 		// load header of page
 		try{
-			var pageTitle = xmlDoc.getElementsByTagName('page-title')[0].innerHTML
+			var pageTitle = xmlDoc['page-head']['page-title']
 		}
-		catch{
+		catch(err){
 			document.getElementsByClassName("body")[0].innerHTML = '<h2>Page not found</h2>';
 			return
 		}
 		
-		var date = xmlDoc.getElementsByTagName('date')[0].innerHTML
+		var date = xmlDoc['page-head']['date']
 		txt += '<div class="project-page-title"><p style="line-height: 70px;">'+pageTitle+'</p></div><div class="date"><p class="pdate">'+date+'</p></div>';
 
 
 		// load main part of the page
-		var blocks = xmlDoc.getElementsByTagName("block");
+		var blocks = xmlDoc.block;
 
 		// loading the main part of the page
 		for (var currBlockNum = 0; currBlockNum < blocks.length; currBlockNum++) {
-			var currBlockLength = blocks[currBlockNum].children.length // the number of elements in the current block
-			var currBlock = blocks[currBlockNum].children // the elements inside the current block
+			
+			// the elements inside the current block
+			var currBlock = blocks[currBlockNum] 
 
 			txt += '<div class="block">'
 
-			// looping thru the elements in the block
-			for (var blockElementNum = 0; blockElementNum < currBlockLength; blockElementNum++){
-				var elementType = currBlock[blockElementNum].tagName // contains the tag name for the element (eg... title, text, image)
-				var elementData = currBlock[blockElementNum].innerHTML // contains the inner data for the element
+			// appending text to var 'txt' depending on tag name
+			if (currBlock.title){
+				txt += '<div class="text"><h1 class="left">'+currBlock.title+'</h1>'
+			}
+			if (currBlock.text){
 
-				// appending text to var 'txt' depending on tag name
-				if (elementType === 'title'){
-					txt += '<div class="text"><h1 class="left">'+elementData+'</h1>'
-				}
-				else if (elementType === 'text'){
-					
-					// add in breaks for ~~
-					var exitLoop = false
-					while (exitLoop === false){
-						elementData = elementData.replace('~~','<br>')
-						var i = elementData.search('~~')
-						if (i === -1){
-							exitLoop = true
-						}
-					}
-					txt += '<p class="left">'+elementData+'</p></div>'
-				}
-				else if (elementType === 'image'){
-					txt += '<div class="img"><img src="'+process.env.PUBLIC_URL+"/img/projects/"+name+"/"+elementData+'" class="img"></div>'
-				}
-				else if (elementType === 'render'){
-					txt += '<div class="render"><img src="'+process.env.PUBLIC_URL+"/img/projects/"+name+"/"+elementData+'" class="img"></div>'
+				var currentText = '<p class="left">'
+
+				if (typeof currBlock.text == 'string'){
+					currentText += currBlock.text
 				}
 				else{
-					console.log('unknown tag name') // shouldnt ever happen
+					for (const i of currBlock.text){
+						// if its a dict then its a link
+						if (i.constructor === Object){
+							currentText += '<a href="'+i.href+'" class="blinks" target="_blank"> '+i.text+" </a>"
+						}
+						else{
+							currentText += i
+						}
+					}
+				}
+				currentText += '</p></div>'
+				txt += currentText
+			}
+			if (currBlock.image){
+				if (Array.isArray(currBlock.image)){
+					for (const image of currBlock.image){
+						txt += '<div class="img"><img src="'+process.env.PUBLIC_URL+"/img/projects/"+name+"/"+image+'" class="img"></div>'
+					}
+				}
+				else{
+					txt += '<div class="img"><img src="'+process.env.PUBLIC_URL+"/img/projects/"+name+"/"+currBlock.image+'" class="img"></div>'
 				}
 			}
+			if (currBlock.render){
+				if (Array.isArray(currBlock.render)){
+					for (const render of currBlock.render){
+						txt += '<div class="render"><img src="'+process.env.PUBLIC_URL+"/img/projects/"+name+"/"+render+'" class="img"></div>'
+					}
+				}
+				else{
+					txt += '<div class="render"><img src="'+process.env.PUBLIC_URL+"/img/projects/"+name+"/"+currBlock.render+'" class="img"></div>'
+				}
+			}
+			if (currBlock.ul){
+				txt += '<ul>'
+
+				for (const i of currBlock.ul){
+					txt += '<li>'
+					// if its a dict then its a link
+					if (i.constructor === Object){
+						txt += '<a href="'+i.href+'" class="blinks" target="_blank"> '+i.text+" </a>"
+					}
+					else{
+						txt += i
+					}
+					txt += '</li>'
+				}
+
+				txt += "</ul>"
+			}
+
+			// add options for links
 			
 			txt += '</div>' // close out block div
 
@@ -89,15 +122,14 @@ export default function ProjectIcon() {
 
 	// passed in from the router
 	var {name} = useParams()
-	var xmlFileLink = process.env.PUBLIC_URL + '/assets/projects/'+name+".xml"
-	
+	var xmlFileLink = process.env.PUBLIC_URL + '/assets/projects/'+name+".json"
+
 	return (
 		<div className="body">
 			{
 				loadProjectPage(xmlFileLink, name) ?
 				<div>hi</div>:
 				<div>else</div>
-
 			}
 		</div>
 	);
