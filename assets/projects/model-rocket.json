@@ -1,0 +1,20 @@
+{
+	"page": {
+		"page-head": {
+			"page-title": "Model Rocket",
+			"date": "January 8, 2021"
+		},
+		"block": [
+			{
+				"title": "Overview",
+				"text": "I was getting into 3D printing, and had just bought myself a Ender 3 Pro. This was really fun to make, and after borrowing a\r\n\t\t\tfew spare engines from a friend and grabbing a 'launch rod' from home depot I hope to launch it soon."
+			},
+			{
+				"title": "Renders"
+			},
+			{
+				"render": "main.png"
+			}
+		]
+	}
+}
