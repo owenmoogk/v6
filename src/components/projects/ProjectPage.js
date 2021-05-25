@@ -112,6 +112,23 @@ export default function ProjectIcon() {
 				txt += "</ul>"
 			}
 
+			if (currBlock.video){
+				if (Array.isArray(currBlock.video)){
+					txt += '<br>'
+					for (const video of currBlock.video){
+						txt += '<video src="'+process.env.PUBLIC_URL+"/img/projects/"+name+"/"+video+'"width=300px controls></video>'
+					}
+				}
+				else{
+					txt += '<br><video src="'+process.env.PUBLIC_URL+"/img/projects/"+name+"/"+currBlock.video+'"width=250px controls></video>'
+				}
+			}
+
+			if (currBlock.iframe){
+				txt += currBlock.iframe
+				console.log(currBlock.iframe)
+			}
+
 			// add options for links
 			
 			txt += '</div>' // close out block div
