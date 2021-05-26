@@ -33,7 +33,7 @@
 				"iframe": "<iframe frameBorder=\"0\" width=\"800px\" height=\"100%\" style=\"min-width: 400px; min-height:400px\" src=\"https://www.mathcha.io/editor/10JLmhV1HvqhW4gK9ocX6QK9xFv7LzVvHJJmLG5?embedded=true\"></iframe>"
 			},
 			{
-				"iframe": "<iframe src=\"https://www.desmos.com/calculator/ty9wiw7p3j?embed\" width=\"500px\" height=\"500px\" style=\"border: 1px solid #ccc\" frameborder=0></iframe>"
+				"iframe": "<iframe src=\"https://www.desmos.com/calculator/wpvjgrsnpr?embed\" width=\"500px\" height=\"500px\" style=\"border: 1px solid #ccc\" frameborder=0></iframe>"
 			},
 			{
 				"title": "Electronics",
