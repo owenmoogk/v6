@@ -1,4 +1,0 @@
-add pages for:
-	geom calculator
-	covid website
-	covid scraper
